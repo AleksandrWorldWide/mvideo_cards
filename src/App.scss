@@ -1,0 +1,39 @@
+@import './Components/Card.scss';
+@import './Components/Header.scss';
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+.ibg {
+	position: relative;
+}
+
+.ibg img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	object-fit: contain;
+}
+
+.wrapper {
+	max-width: 1300px;
+	height: 100vh;
+	margin: 0 auto;
+	overflow: hidden;
+	box-sizing: content-box;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.hideReduce {
+	display: none;
+}
+
+
+

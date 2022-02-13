@@ -1,0 +1,155 @@
+.card {
+	border: 1px solid #000;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 350px;
+	height: 540px;
+	padding: 20px;
+	&__close {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		width: 25px;
+		height: 25px;
+		cursor: pointer;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 10px;
+			right: 0;
+			width: 25px;
+			height: 2px;
+			background: #000;
+			transform: rotate(-45deg);
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			top: 10px;
+			right: 0;
+			width: 25px;
+			height: 2px;
+			background: #000;
+			transform: rotate(45deg);
+		}
+	}
+	&__header {
+		display: flex;
+		padding-left: 30px;
+		font-weight: 700;
+		font-size: 18px;
+	}
+	&__reduce {
+		margin-top: 20px;
+		font-size: 18px;
+		font-weight: 700;
+		text-transform: uppercase;
+		background-color: #36E8FF;
+		color: #fff;
+		width: 150px;
+		text-align: center;
+		padding: 7px 0;
+		transform: skewY(-10deg);
+	}
+	&__img {
+		position: relative;
+		width: 266px;
+		height: 185px;
+		margin-top: 20px;
+		align-self: center;
+	}
+	&__subtitle {
+		margin-top: 30px;
+		width: 250px;
+		padding-left: 30px;
+		font-weight: 500;
+		flex: 1 1 auto;
+		a {
+			text-decoration: none;
+			color: #595959;
+		}
+		
+	}
+	&__input {
+		margin-top: 20px;
+		text-align: center;
+		
+		input {
+			outline: none;
+			font-size: 18px;
+			border: 3px solid blueviolet;
+			border-radius: 4px;
+			&::placeholder {
+				color: rgba(0,0,0,.25);
+				padding: 3px 10px;
+			}
+		}
+		
+	}
+	&__footer {
+		display: flex;
+		align-items: center;
+		padding-left: 30px;
+		margin-bottom: 25px;
+		margin-top: 20px;
+	}
+}
+
+.header-card {
+	&__title {
+		margin-top: 15px;
+		transform: skewY(-10deg);
+		font-size: 24px;
+		width: 190px;
+	}
+	&__produce {
+		width: 100px;
+		height: 50px;
+		margin-left: 20px;
+	}
+}
+.price-card {
+	&__old {
+		color: #CCCCCC;
+		font-weight: 400;
+		font-size: 18px;
+		text-decoration: line-through;
+	}
+	&__new {
+		margin-top: 8px;
+		color: #000;
+		font-weight: 700;
+		font-size: 32px;
+	}
+}
+.footer-card {
+	display: flex;
+	width: 310px;
+	justify-content: space-between;
+	padding-right: 30px;
+	&__price {
+	}
+	&__btn {
+		button {
+			color:#fff;
+			background-color: #FF2100;
+			padding: 13px 30px;
+			box-shadow: 4px 4px 0 0 rgba(0,0,0,.25);
+			border-radius: 5px;
+			font-size: 18px;
+			cursor: pointer;
+			&:hover {
+				background-color: green;
+			}
+			&:active {
+				transform: translate(4px, 4px);
+				box-shadow: none;
+			}
+		}
+			
+
+		
+	}
+}

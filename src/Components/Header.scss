@@ -1,0 +1,48 @@
+
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	font-family: 'Quintessential';
+	&__title {
+		text-align: center;
+		color: red;
+		font-size: 48px;
+		margin-right: 70px;
+	}
+	&__btn,&__reduce {
+		font-family: inherit;
+		font-size: 32px;
+		font-weight: 500;
+		letter-spacing: 2px;
+		background-color: #FF2100;
+		color: #fff;
+		padding: 10px 20px;
+		border-radius: 10px;
+		cursor: pointer;
+		box-shadow: 7px 7px 0 0 rgba(0,0,0,.25);
+		margin-right: 60px;
+		&:hover {
+			background-color: green;
+		}
+		&:active {
+			transform: translate(7px, 7px);
+			box-shadow: none;
+		}
+	}
+	&__input {
+		font-size: 24px;
+		outline: none;
+		border: 3px solid blueviolet;
+		border-radius: 5px;
+		&::placeholder {
+			color: rgba(0,0,0,.25);
+			padding: 3px 10px;
+		}
+	}
+	&__reduce {
+		margin-left: 60px;
+	}
+}
