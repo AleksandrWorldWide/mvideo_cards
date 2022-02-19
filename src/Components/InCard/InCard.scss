@@ -1,0 +1,10 @@
+
+.incard {
+	display: flex;
+	justify-content: center;
+	
+	&__text {
+		padding: 5px 10px;
+		border: 1px dashed green;
+	}
+}

@@ -15,6 +15,7 @@ const Header = (props) => {
 				className="header__reduce"
 				onClick={props.handleReduce}
 			>hide</button>
+			{props.children}
 		</header>
 	)
 	
